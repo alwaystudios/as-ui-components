@@ -1,18 +1,18 @@
-import typescript from "rollup-plugin-typescript2";
-import pkg from "./package.json";
+import typescript from 'rollup-plugin-typescript2'
+import pkg from './package.json'
 
 export default [
   {
-    input: "src/index.ts",
-    external: Object.keys(pkg.peerDependencies || {}),
+    input: 'src/index.ts',
+    external: Object.keys(pkg.dependencies || {}),
     plugins: [
       typescript({
-        typescript: require("typescript")
-      })
+        typescript: require('typescript'),
+      }),
     ],
     output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "esm" },
-    ]
-  }
-];
+      { file: pkg.main, format: 'cjs' },
+      { file: pkg.module, format: 'esm' },
+    ],
+  },
+]

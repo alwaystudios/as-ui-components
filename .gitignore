@@ -4,3 +4,4 @@ dist
 .secret
 yarn-error.log
 storybook-static
+.npmrc

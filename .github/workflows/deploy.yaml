@@ -9,7 +9,6 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-          scope: alwaystudios
       - run: yarn && yarn build
       - run: npm publish
       - run: yarn build-storybook

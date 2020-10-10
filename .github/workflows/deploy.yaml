@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Publish to npm, deploy to AWS
 on: push
 jobs:
   publish-npm:
@@ -11,12 +11,13 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn && yarn build
       - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - run: yarn build-storybook
       - uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

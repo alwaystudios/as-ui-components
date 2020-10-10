@@ -1,7 +1,9 @@
 import React from 'react'
 
-type Props = {}
+type Props = {
+  onClick: () => void
+}
 
-export const Button: React.FunctionComponent<Props> = ({}) => {
-  return <button>todo</button>
+export const Button: React.FunctionComponent<Props> = ({ onClick }) => {
+  return <button onClick={onClick}>todo</button>
 }

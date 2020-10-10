@@ -4,7 +4,7 @@ import { Button } from './Button'
 
 describe('button', () => {
   it('renders', () => {
-    const wrapper = mount(<Button />)
+    const wrapper = mount(<Button onClick={jest.fn()} />)
     const button = wrapper.find('button')
     expect(button.exists()).toEqual(true)
   })

@@ -8,5 +8,5 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 ## Button
 
 ```
-  <Button />
+  <Button onClick={() => void}/>
 ```

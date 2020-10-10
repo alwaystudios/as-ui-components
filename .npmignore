@@ -6,6 +6,7 @@ node_modules/
 coverage/
 src/
 jest.config.js
+jest-config-setup.js
 tsconfig*
 tslint.json
 .editorconfig
@@ -16,3 +17,4 @@ tslint.json
 *.sh
 rollup.config.js
 .eslintrc.js
+storybook-static

@@ -9,7 +9,7 @@ jobs:
         with:
           node-version: 14
           registry-url: https://registry.npmjs.org/
-          scope: getify
+          scope: alwaystudios
       - run: yarn && yarn build && yarn build-storybook
       - run: npm publish
       - uses: jakejarvis/s3-sync-action@master

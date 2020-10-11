@@ -1,5 +1,6 @@
 import { Button } from './components/Button'
 import { AlarmIcon } from './components/icons/AlarmIcon'
+import { ArrowIcon } from './components/icons/ArrowIcon'
 import { ClockIcon } from './components/icons/ClockIcon'
 import { DinnerPlateIcon } from './components/icons/DinnerPlateIcon'
 import { DustbinIcon } from './components/icons/DustbinIcon'
@@ -13,6 +14,7 @@ import { WarningIcon } from './components/icons/WarningIcon'
 import { useInterval } from './hooks/useInterval'
 
 export {
+  ArrowIcon,
   Button,
   AlarmIcon,
   useInterval,

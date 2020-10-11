@@ -37,11 +37,6 @@ const StyledButton = styled.button`
     border: 0.1rem solid #333333;
     background-color: #1ea7fd;
   }
-
-  @media all and (max-width: 30em) {
-    display: block;
-    margin: 0.4em auto;
-  }
 `
 
 type Props = {

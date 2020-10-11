@@ -5,7 +5,7 @@ import { boolean, number, text } from '@storybook/addon-knobs'
 
 const stories = storiesOf('Button', module)
 
-stories.add('with react state', () =>
+stories.add('renders with props', () =>
   React.createElement(() => {
     const [counter, setcounter] = useState(0)
 

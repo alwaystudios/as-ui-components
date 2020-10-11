@@ -42,3 +42,11 @@ Hook that supports server side rendering when using local storage
 ```
     const storage = useLocalStorage()
 ```
+
+### useWindow
+
+Hook that supports server side rendering when using the Window object
+
+```
+    const _window = useWindow()
+```

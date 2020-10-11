@@ -14,11 +14,13 @@ import { UploadIcon } from './components/icons/UploadIcon'
 import { WarningIcon } from './components/icons/WarningIcon'
 import { useInterval } from './hooks/useInterval'
 import { useLocalStorage } from './hooks/useLocalStorage'
+import { useWindow } from './hooks/useWindow'
 
 export {
   Button,
   useLocalStorage,
   useInterval,
+  useWindow,
   EmailIcon,
   ArrowIcon,
   AlarmIcon,

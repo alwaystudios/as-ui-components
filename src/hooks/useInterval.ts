@@ -2,10 +2,9 @@ import { useEffect } from 'react'
 
 export const useInterval = (callback: () => void, delay: number): void => {
   useEffect(() => {
-    const tick = () => {
+    const id = setInterval(() => {
       callback()
-    }
-    const id = setInterval(tick, delay)
+    }, delay)
     return () => clearInterval(id)
-  }, [delay])
+  }, [callback, delay])
 }

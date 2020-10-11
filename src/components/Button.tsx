@@ -5,36 +5,36 @@ import styled, { css } from 'styled-components'
 const StyledButton = styled.button`
   display: inline-block;
   padding: 0.5rem 0.5rem;
-  border: 0.1rem solid #cccccc;
+  border: 0.15rem solid #1ea7fd;
   margin: auto;
   border-radius: 3px;
   box-sizing: border-box;
   font-family: sans-serif;
   font-weight: 1000;
   text-align: center;
-  transition: all 0.5s;
+  transition: all 0.2s;
 
   ${({ disabled }: { disabled: boolean }) =>
     disabled
       ? css`
-          border: 0.1rem solid #999999;
+          border: 0.1rem solid #666666;
           color: #666666;
           background-color: #cccccc;
         `
       : css`
-          color: #ffffff;
-          background-color: #69bff5;
+          color: #1ea7fd;
+          background-color: #ffffff;
 
           &:hover {
             cursor: pointer;
-            border: 0.1rem solid #333333;
+            color: #ffffff;
             background-color: #1ea7fd;
           }
         `}
 
   &:focus {
     outline: none;
-    border: 0.1rem solid #333333;
+    color: #ffffff;
     background-color: #1ea7fd;
   }
 `

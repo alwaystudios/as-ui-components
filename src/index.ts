@@ -13,13 +13,15 @@ import { UnLockIcon } from './components/icons/UnLockIcon'
 import { UploadIcon } from './components/icons/UploadIcon'
 import { WarningIcon } from './components/icons/WarningIcon'
 import { useInterval } from './hooks/useInterval'
+import { useLocalStorage } from './hooks/useLocalStorage'
 
 export {
+  Button,
+  useLocalStorage,
+  useInterval,
   EmailIcon,
   ArrowIcon,
-  Button,
   AlarmIcon,
-  useInterval,
   ClockIcon,
   DinnerPlateIcon,
   DustbinIcon,

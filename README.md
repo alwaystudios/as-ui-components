@@ -34,3 +34,11 @@ Executes a callback with a continuous delay
 ```
     useInterval(getTwitterFeedUpdates, 1000)
 ```
+
+### useLocalStorage
+
+Hook that supports server side rendering when using local storage
+
+```
+    const storage = useLocalStorage()
+```

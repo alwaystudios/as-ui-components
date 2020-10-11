@@ -1,10 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 
-export const useInterval = (callback: () => void, delay: number): void => {
+export const useInterval = (callback: () => void, delay: number) => {
+  const savedCallback = useMemo(() => callback, [callback])
+
   useEffect(() => {
-    const id = setInterval(() => {
-      callback()
-    }, delay)
+    const id = setInterval(savedCallback, delay)
     return () => clearInterval(id)
-  }, [callback, delay])
+  }, [delay])
 }

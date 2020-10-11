@@ -12,13 +12,16 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 ### Icons
 
 - AlarmIcon
-- ClockIcon,
-- DinnerPlateIcon,
-- DustbinIcon,
-- LockIcon,
-- UnLockIcon,
-- SaveIcon,
-- UploadIcon,
+- ClockIcon
+- DinnerPlateIcon
+- DustbinIcon
+- ErrorIcon
+- LockIcon
+- SaveIcon
+- SuccessIcon
+- UnLockIcon
+- UploadIcon
+- WarningIcon
 
 ## Hooks
 

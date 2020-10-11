@@ -17,7 +17,7 @@ const StyledButton = styled.button`
   ${({ disabled }: { disabled: boolean }) =>
     disabled
       ? css`
-          border: 0.1rem solid #666666;
+          border: 0.15rem solid #666666;
           color: #666666;
           background-color: #cccccc;
         `

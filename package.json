@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "engines": {
     "node": ">=10"
@@ -19,7 +19,7 @@
     "build-storybook": "build-storybook",
     "install-peers": "install-peers -f",
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write '{src,test}/**/*.{js,ts,tsx,json,css,md}'",
+    "format": "prettier --write 'src/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
     "clean": "sh cleanup.sh"
   },

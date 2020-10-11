@@ -56,10 +56,13 @@ const Span = styled.span`
     width: 1rem;
 
     ${({ iconOnly }: { iconOnly: boolean }) =>
-      !iconOnly &&
-      css`
-        padding-left: 0.5rem;
-      `}
+      iconOnly
+        ? css`
+            padding-left: 2px;
+          `
+        : css`
+            padding-left: 0.5rem;
+          `}
     fill: currentColor;
   }
 `

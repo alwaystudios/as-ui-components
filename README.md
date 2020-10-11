@@ -15,4 +15,10 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
 ## Hooks
 
-todo
+### useInterval
+
+Executes a callback with a continuous delay
+
+```
+    useInterval(getTwitterFeedUpdates, 1000)
+```

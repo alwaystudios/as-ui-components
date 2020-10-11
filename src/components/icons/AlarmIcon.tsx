@@ -2,15 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { Icon } from './Icon'
 
 export const AlarmIcon: FunctionComponent<Icon> = ({ size }) => (
-  <svg
-    height={size}
-    width={size}
-    version="1.1"
-    id="Layer_1"
-    x="0px"
-    y="0px"
-    viewBox="0 0 456.727 456.727"
-  >
+  <svg height={size} width={size} viewBox="0 0 456.727 456.727">
     <g>
       <path
         d="M415.863,315.864l-30-30v-80.366c0-76.725-54.865-140.625-127.5-154.634v-20c0-16.542-13.458-30-30-30s-30,13.458-30,30v20

@@ -2,14 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { Icon } from './Icon'
 
 export const DustbinIcon: FunctionComponent<Icon> = ({ size }) => (
-  <svg
-    height={size}
-    width={size}
-    viewBox="0 0 24 24"
-    id="trash_bin"
-    data-name="trash bin"
-    xmlns="http://www.w3.org/2000/svg"
-  >
+  <svg height={size} width={size} viewBox="0 0 24 24">
     <rect id="Rectangle_4" data-name="Rectangle 4" width="24" height="24" fill="none" />
     <path
       id="Rectangle"

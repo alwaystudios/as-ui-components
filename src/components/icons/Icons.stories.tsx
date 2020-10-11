@@ -5,6 +5,7 @@ import { ArrowIcon } from './ArrowIcon'
 import { ClockIcon } from './ClockIcon'
 import { DinnerPlateIcon } from './DinnerPlateIcon'
 import { DustbinIcon } from './DustbinIcon'
+import { EmailIcon } from './EmailIcon'
 import { ErrorIcon } from './ErrorIcon'
 import { LockIcon } from './LockIcon'
 import { SaveIcon } from './SaveIcon'
@@ -23,6 +24,7 @@ stories.add('RightArrowIcon', () => <ArrowIcon direction="right" size="40px" />)
 stories.add('ClockIcon', () => <ClockIcon size="40px" />)
 stories.add('DinnerPlateIcon', () => <DinnerPlateIcon size="40px" />)
 stories.add('DustbinIcon', () => <DustbinIcon size="40px" />)
+stories.add('EmailIcon', () => <EmailIcon size="40px" />)
 stories.add('ErrorIcon', () => <ErrorIcon size="40px" />)
 stories.add('LockIcon', () => <LockIcon size="40px" />)
 stories.add('SaveIcon', () => <SaveIcon size="40px" />)

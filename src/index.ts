@@ -4,6 +4,7 @@ import { ArrowIcon } from './components/icons/ArrowIcon'
 import { ClockIcon } from './components/icons/ClockIcon'
 import { DinnerPlateIcon } from './components/icons/DinnerPlateIcon'
 import { DustbinIcon } from './components/icons/DustbinIcon'
+import { EmailIcon } from './components/icons/EmailIcon'
 import { ErrorIcon } from './components/icons/ErrorIcon'
 import { LockIcon } from './components/icons/LockIcon'
 import { SaveIcon } from './components/icons/SaveIcon'
@@ -14,6 +15,7 @@ import { WarningIcon } from './components/icons/WarningIcon'
 import { useInterval } from './hooks/useInterval'
 
 export {
+  EmailIcon,
   ArrowIcon,
   Button,
   AlarmIcon,

@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { Icon } from './Icon'
 
 export const DinnerPlateIcon: FunctionComponent<Icon> = ({ size }) => (
-  <svg height={size} width={size} version="1.1" x="0px" y="0px" viewBox="0 0 354.662 354.662">
+  <svg height={size} width={size} viewBox="0 0 354.662 354.662">
     <g>
       <path
         d="M349.805,45.295c-2.924-1.098-6.221-0.273-8.279,2.074c-1.133,1.289-27.742,32.117-29.613,77.371

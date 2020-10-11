@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { Icon } from './Icon'
 
 export const ClockIcon: FunctionComponent<Icon> = ({ size }) => (
-  <svg height={size} width={size} version="1.1" x="0px" y="0px" viewBox="0 0 488 488">
+  <svg height={size} width={size} viewBox="0 0 488 488">
     <g transform="translate(0 -540.36)">
       <path
         d="M351.1,846.96l-97.1-67.9v-116.7c0-5.5-4.5-10-10-10s-10,4.5-10,10v122c0,3.3,1.6,6.3,4.3,8.2l101.4,70.9

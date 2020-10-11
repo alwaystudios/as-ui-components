@@ -2,15 +2,7 @@ import React, { FunctionComponent } from 'react'
 import { Icon } from './Icon'
 
 export const SaveIcon: FunctionComponent<Icon> = ({ size }) => (
-  <svg
-    height={size}
-    width={size}
-    version="1.1"
-    id="Layer_1"
-    x="0px"
-    y="0px"
-    viewBox="0 0 370.571 370.571"
-  >
+  <svg height={size} width={size} viewBox="0 0 370.571 370.571">
     <g>
       <path
         d="M291.785,0H0v370.571h370.571V78.787L291.785,0z M100,30h170.571v50H100V30z M270.571,340.571H100V200.286h170.571V340.571z

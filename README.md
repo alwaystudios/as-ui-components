@@ -16,6 +16,7 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - ClockIcon
 - DinnerPlateIcon
 - DustbinIcon
+- EmailIcon
 - ErrorIcon
 - LockIcon
 - SaveIcon

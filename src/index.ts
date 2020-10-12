@@ -6,6 +6,7 @@ import { DinnerPlateIcon } from './components/icons/DinnerPlateIcon'
 import { DustbinIcon } from './components/icons/DustbinIcon'
 import { EmailIcon } from './components/icons/EmailIcon'
 import { ErrorIcon } from './components/icons/ErrorIcon'
+import { HistoryIcon } from './components/icons/HistoryIcon'
 import { LockIcon } from './components/icons/LockIcon'
 import { SaveIcon } from './components/icons/SaveIcon'
 import { SuccessIcon } from './components/icons/SuccessIcon'
@@ -34,4 +35,5 @@ export {
   ErrorIcon,
   SuccessIcon,
   WarningIcon,
+  HistoryIcon,
 }

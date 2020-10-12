@@ -18,6 +18,7 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - DustbinIcon
 - EmailIcon
 - ErrorIcon
+- HistoryIcon
 - LockIcon
 - SaveIcon
 - SuccessIcon

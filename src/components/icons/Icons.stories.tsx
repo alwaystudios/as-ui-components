@@ -13,6 +13,7 @@ import { SuccessIcon } from './SuccessIcon'
 import { UnLockIcon } from './UnLockIcon'
 import { UploadIcon } from './UploadIcon'
 import { WarningIcon } from './WarningIcon'
+import { HistoryIcon } from './HistoryIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -26,6 +27,7 @@ stories.add('DinnerPlateIcon', () => <DinnerPlateIcon size="40px" />)
 stories.add('DustbinIcon', () => <DustbinIcon size="40px" />)
 stories.add('EmailIcon', () => <EmailIcon size="40px" />)
 stories.add('ErrorIcon', () => <ErrorIcon size="40px" />)
+stories.add('HistoryIcon', () => <HistoryIcon size="40px" />)
 stories.add('LockIcon', () => <LockIcon size="40px" />)
 stories.add('SaveIcon', () => <SaveIcon size="40px" />)
 stories.add('SuccessIcon', () => <SuccessIcon size="40px" />)

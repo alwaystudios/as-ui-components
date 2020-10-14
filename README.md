@@ -18,10 +18,14 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - DustbinIcon
 - EmailIcon
 - ErrorIcon
+- FacebookIcon
 - HistoryIcon
+- LinkedInIcon
 - LockIcon
+- MapsIcon
 - SaveIcon
 - SuccessIcon
+- TelephoneIcon
 - UnLockIcon
 - UploadIcon
 - WarningIcon

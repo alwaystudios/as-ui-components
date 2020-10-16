@@ -20,9 +20,11 @@ import { useWindow } from './hooks/useWindow'
 import { FacebookIcon } from './components/icons/FacebookIcon'
 import { LinkedInIcon } from './components/icons/LinkedIn'
 import { TelephoneIcon } from './components/icons/TelephoneIcon'
+import { TextInput } from './components/TextInput'
 
 export {
   Button,
+  TextInput,
   useLocalStorage,
   useInterval,
   useWindow,

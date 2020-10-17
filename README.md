@@ -8,6 +8,7 @@ See storybook for component and icon usage
 http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
 - Button
+- SortableList
 - TextInput
 
 ### Icons
@@ -24,6 +25,7 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - LinkedInIcon
 - LockIcon
 - MapsIcon
+- ResizeIcon (horzontal | vertical)
 - SaveIcon
 - SuccessIcon
 - TelephoneIcon

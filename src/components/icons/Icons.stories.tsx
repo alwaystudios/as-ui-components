@@ -14,10 +14,11 @@ import { UnLockIcon } from './UnLockIcon'
 import { UploadIcon } from './UploadIcon'
 import { WarningIcon } from './WarningIcon'
 import { HistoryIcon } from './HistoryIcon'
-import { MapsIcon } from './Maps'
+import { MapsIcon } from './MapsIcon'
 import { FacebookIcon } from './FacebookIcon'
 import { LinkedInIcon } from './LinkedIn'
 import { TelephoneIcon } from './TelephoneIcon'
+import { ResizeIcon } from './ResizeIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -36,6 +37,8 @@ stories.add('HistoryIcon', () => <HistoryIcon size="40px" />)
 stories.add('LinkedInIcon', () => <LinkedInIcon size="40px" />)
 stories.add('LockIcon', () => <LockIcon size="40px" />)
 stories.add('MapsIcon', () => <MapsIcon size="40px" />)
+stories.add('ResizeIcon - vertical', () => <ResizeIcon size="40px" direction="vertical" />)
+stories.add('ResizeIcon - horizontal', () => <ResizeIcon size="40px" direction="horizontal" />)
 stories.add('SaveIcon', () => <SaveIcon size="40px" />)
 stories.add('SuccessIcon', () => <SuccessIcon size="40px" />)
 stories.add('TelephoneIcon', () => <TelephoneIcon size="40px" />)

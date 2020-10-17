@@ -8,7 +8,7 @@ import { EmailIcon } from './components/icons/EmailIcon'
 import { ErrorIcon } from './components/icons/ErrorIcon'
 import { HistoryIcon } from './components/icons/HistoryIcon'
 import { LockIcon } from './components/icons/LockIcon'
-import { MapsIcon } from './components/icons/Maps'
+import { MapsIcon } from './components/icons/MapsIcon'
 import { SaveIcon } from './components/icons/SaveIcon'
 import { SuccessIcon } from './components/icons/SuccessIcon'
 import { UnLockIcon } from './components/icons/UnLockIcon'
@@ -21,14 +21,18 @@ import { FacebookIcon } from './components/icons/FacebookIcon'
 import { LinkedInIcon } from './components/icons/LinkedIn'
 import { TelephoneIcon } from './components/icons/TelephoneIcon'
 import { TextInput } from './components/TextInput'
+import { ResizeIcon } from './components/icons/ResizeIcon'
+import { SortableList } from './components/SortableList'
 
 export {
   Button,
   TextInput,
+  SortableList,
   useLocalStorage,
   useInterval,
   useWindow,
   EmailIcon,
+  ResizeIcon,
   ArrowIcon,
   AlarmIcon,
   ClockIcon,

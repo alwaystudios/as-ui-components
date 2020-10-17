@@ -9,10 +9,6 @@ import arrayMove from 'array-move'
 import styled from 'styled-components'
 import { ResizeIcon } from './icons/ResizeIcon'
 
-const DragIcon = styled(ResizeIcon)`
-  cursor: row-resize;
-`
-
 const Li = styled.li`
   display: flex;
   align-items: center;
@@ -22,7 +18,7 @@ const Div = styled.div`
   width: 100%;
 `
 
-const Handle = SortableHandle(() => <DragIcon size="20px" direction="horizontal" />)
+const Handle = SortableHandle(() => <ResizeIcon size="20px" direction="horizontal" />)
 
 const SortableItem = SortableElement(({ element }: any) => (
   <Li>

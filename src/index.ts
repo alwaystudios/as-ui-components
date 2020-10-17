@@ -23,6 +23,7 @@ import { TelephoneIcon } from './components/icons/TelephoneIcon'
 import { TextInput } from './components/TextInput'
 import { ResizeIcon } from './components/icons/ResizeIcon'
 import { SortableList } from './components/SortableList'
+import { deleteCookie, getCookie, setCookie } from './hooks/useCookie'
 
 export {
   Button,
@@ -31,6 +32,9 @@ export {
   useLocalStorage,
   useInterval,
   useWindow,
+  setCookie,
+  getCookie,
+  deleteCookie,
   EmailIcon,
   ResizeIcon,
   ArrowIcon,

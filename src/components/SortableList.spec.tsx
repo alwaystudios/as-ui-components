@@ -11,7 +11,7 @@ describe('SortableList', () => {
     const wrapper = mount(
       <SortableList data={data} setData={setData}>
         {children}
-      </SortableList>
+      </SortableList>,
     )
     expect(wrapper.prop('data')).toBe(data)
     expect(wrapper.prop('setData')).toBe(setData)
@@ -30,7 +30,7 @@ describe('SortableList', () => {
     const wrapper = mount(
       <SortableList data={data} setData={setData}>
         {children}
-      </SortableList>
+      </SortableList>,
     )
 
     expect(wrapper.find('ul').find('li')).toHaveLength(3)

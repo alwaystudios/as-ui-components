@@ -58,3 +58,11 @@ Hook that supports server side rendering when using the Window object
 ```
     const _window = useWindow()
 ```
+
+### useCookie
+
+```
+    setCookie('cookie-name', 'some value')
+    getCookie('cookie-name')
+    deleteCookie('cookie-name')
+```

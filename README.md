@@ -78,11 +78,3 @@ Hook that supports server side rendering when using the Window object
     getCookie('cookie-name')
     deleteCookie('cookie-name')
 ```
-
-### useApiPoller
-
-Default interval 2000ms
-
-```
-    useApiPoller(apiGetRequest, requestParams, processNewData, interval)
-```

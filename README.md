@@ -11,7 +11,19 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - SortableList
 - TextInput
 
-### Icons
+### SortableList
+
+Children should a component render of the data, e.g.
+
+```
+    <SortableList data={data} setData={setData}>
+        {data.map((item, index) => (
+            <Container key={index}>{item}</Container>
+        ))}
+    </SortableList>
+```
+
+## Icons
 
 - AlarmIcon
 - ArrowIcon (up | down | left | right)
@@ -65,4 +77,12 @@ Hook that supports server side rendering when using the Window object
     setCookie('cookie-name', 'some value')
     getCookie('cookie-name')
     deleteCookie('cookie-name')
+```
+
+### useApiPoller
+
+Default interval 2000ms
+
+```
+    useApiPoller(apiGetRequest, requestParams, processNewData, interval)
 ```

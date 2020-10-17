@@ -24,12 +24,14 @@ import { TextInput } from './components/TextInput'
 import { ResizeIcon } from './components/icons/ResizeIcon'
 import { SortableList } from './components/SortableList'
 import { deleteCookie, getCookie, setCookie } from './hooks/useCookie'
+import { useApiPoller } from './hooks/useApiPoller'
 
 export {
   Button,
   TextInput,
   SortableList,
   useLocalStorage,
+  useApiPoller,
   useInterval,
   useWindow,
   setCookie,

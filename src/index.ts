@@ -24,11 +24,17 @@ import { TextInput } from './components/TextInput'
 import { ResizeIcon } from './components/icons/ResizeIcon'
 import { SortableList } from './components/SortableList'
 import { deleteCookie, getCookie, setCookie } from './hooks/useCookie'
+import { Checkbox } from './components/Checkbox'
+import { TableCell, TableHeadCell, TableHeader } from './components/Table'
 
 export {
   Button,
   TextInput,
   SortableList,
+  Checkbox,
+  TableHeadCell,
+  TableCell,
+  TableHeader,
   useLocalStorage,
   useInterval,
   useWindow,

@@ -8,7 +8,11 @@ See storybook for component and icon usage
 http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
 - Button
+- Checkbox
 - SortableList
+- TableCell,
+- TableHeadCell,
+- TableHeader,
 - TextInput
 
 ### SortableList

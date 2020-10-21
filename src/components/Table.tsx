@@ -1,11 +1,19 @@
 import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
 
+export const Table = styled.table``
+
+export const TableBody = styled.tbody``
+
 export const TableHeader: FunctionComponent<{ title: string }> = ({ title, children }) => (
-  <div>
-    <h3>{title}</h3>
+  <thead>
+    <tr>
+      <td>
+        <h3>{title}</h3>
+      </td>
+    </tr>
     {children}
-  </div>
+  </thead>
 )
 
 const Row = styled.tr`

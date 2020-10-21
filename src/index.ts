@@ -25,7 +25,14 @@ import { ResizeIcon } from './components/icons/ResizeIcon'
 import { SortableList } from './components/SortableList'
 import { deleteCookie, getCookie, setCookie } from './hooks/useCookie'
 import { Checkbox } from './components/Checkbox'
-import { TableCell, TableHeadCell, TableHeader, TableRow } from './components/Table'
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHeadCell,
+  TableHeader,
+  TableRow,
+} from './components/Table'
 
 export {
   Button,
@@ -33,6 +40,8 @@ export {
   SortableList,
   Checkbox,
   TableHeadCell,
+  Table,
+  TableBody,
   TableRow,
   TableCell,
   TableHeader,

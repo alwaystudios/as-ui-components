@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
+import { Table, TableBody, TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
 
 const stories = storiesOf('Table', module)
 
@@ -44,16 +44,15 @@ const tableData = [
 
 stories.add('table components - cells can wrap', () => (
   <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
-    <table>
-      <thead>
-        <TableHeader title="The table header..." />
+    <Table>
+      <TableHeader title="The table header...">
         <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />
           <TableHeadCell text="Date" />
         </TableRow>
-      </thead>
-      <tbody>
+      </TableHeader>
+      <TableBody>
         {tableData.map(({ recipe, chef, date }) => (
           <TableRow>
             <TableCell>{recipe}</TableCell>
@@ -61,8 +60,8 @@ stories.add('table components - cells can wrap', () => (
             <TableCell>{date}</TableCell>
           </TableRow>
         ))}
-      </tbody>
-    </table>
+      </TableBody>
+    </Table>
   </div>
 ))
 
@@ -70,16 +69,15 @@ const ExpandableChildren = <TableCell>Some expandable content</TableCell>
 
 stories.add('table components - cells no wrap', () => (
   <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
-    <table>
-      <thead>
-        <TableHeader title="The table header..." />
+    <Table>
+      <TableHeader title="The table header...">
         <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />
           <TableHeadCell text="Date" />
         </TableRow>
-      </thead>
-      <tbody>
+      </TableHeader>
+      <TableBody>
         {tableData.map(({ recipe, chef, date }) => (
           <TableRow expanded={true} expandableChildren={ExpandableChildren}>
             <TableCell canWrap={false}>{recipe}</TableCell>
@@ -87,7 +85,7 @@ stories.add('table components - cells no wrap', () => (
             <TableCell canWrap={false}>{date}</TableCell>
           </TableRow>
         ))}
-      </tbody>
-    </table>
+      </TableBody>
+    </Table>
   </div>
 ))

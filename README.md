@@ -10,6 +10,8 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - Button
 - Checkbox
 - SortableList
+- Table,
+- TableBody,
 - TableCell,
 - TableHeadCell,
 - TableHeader,

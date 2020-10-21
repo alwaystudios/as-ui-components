@@ -7,15 +7,19 @@ describe('Table', () => {
   describe('TableHeader', () => {
     it('renders with a title and children', () => {
       const wrapper = mount(
-        <TableHeader title="some title">
-          <span>some text</span>
-        </TableHeader>,
+        <table>
+          <TableHeader title="some title">
+            <tr>
+              <td>some content</td>
+            </tr>
+          </TableHeader>
+        </table>,
       )
-      const container = wrapper.find('div')
-      const title = container.find('h3')
+      const title = wrapper.find('h3')
       expect(title.text()).toEqual('some title')
-      const span = container.find('span')
-      expect(span.text()).toEqual('some text')
+      const container = wrapper.find('thead')
+      const span = container.find('td').at(1)
+      expect(span.text()).toEqual('some content')
     })
   })
 

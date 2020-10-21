@@ -14,7 +14,9 @@ const StickyTh = styled.th`
   z-index: 1;
 `
 
-export const TableHeadCell = ({ text }: { text: string }) => <StickyTh>{text}</StickyTh>
+export const TableHeadCell = ({ text }: { text: string }): JSX.Element => (
+  <StickyTh>{text}</StickyTh>
+)
 
 type TableCellProps = {
   canWrap?: boolean

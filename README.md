@@ -13,6 +13,7 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - TableCell,
 - TableHeadCell,
 - TableHeader,
+- TableRow,
 - TextInput
 
 ### SortableList

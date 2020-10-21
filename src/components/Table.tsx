@@ -8,6 +8,31 @@ export const TableHeader: FunctionComponent<{ title: string }> = ({ title, child
   </div>
 )
 
+const Row = styled.tr`
+  && {
+    height: 3rem;
+  }
+`
+
+type TableRowProps = {
+  selected?: boolean // todo: highlight a selected row
+  expanded?: boolean
+  expandableChildren?: React.ReactNode
+  children: React.ReactNode
+}
+
+export const TableRow: FunctionComponent<TableRowProps> = ({
+  // selected = false,
+  expanded = false,
+  expandableChildren,
+  children,
+}) => (
+  <>
+    <Row>{children}</Row>
+    {expanded && expandableChildren && <Row>{expandableChildren}</Row>}
+  </>
+)
+
 const StickyTh = styled.th`
   position: sticky !important;
   top: 0;

@@ -1,6 +1,6 @@
 import { mount } from 'enzyme'
 import React from 'react'
-import { TableCell, TableHeadCell, TableHeader } from './Table'
+import { TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
 import 'jest-styled-components'
 
 describe('Table', () => {
@@ -78,6 +78,40 @@ describe('Table', () => {
       const td = wrapper.find('td')
       expect(td.prop('className')).toContain('my-classname')
       expect(td).toHaveStyleRule('white-space', 'nowrap')
+    })
+  })
+
+  describe('TableRow', () => {
+    it('renders with defaults', () => {
+      const wrapper = mount(
+        <table>
+          <tbody>
+            <TableRow>
+              <td>content</td>
+            </TableRow>
+          </tbody>
+        </table>,
+      )
+
+      const tr = wrapper.find('tr')
+      expect(tr.text()).toBe('content')
+    })
+
+    it('renders expand with expandable content', () => {
+      const ExpandableChildren = <TableCell>Expandable content</TableCell>
+
+      const wrapper = mount(
+        <table>
+          <tbody>
+            <TableRow expanded={true} expandableChildren={ExpandableChildren}>
+              <td>content</td>
+            </TableRow>
+          </tbody>
+        </table>,
+      )
+
+      const tr = wrapper.find('tr')
+      expect(tr.at(1).text()).toBe('Expandable content')
     })
   })
 })

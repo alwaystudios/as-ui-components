@@ -1,6 +1,6 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { TableCell, TableHeadCell, TableHeader } from './Table'
+import { TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
 
 const stories = storiesOf('Table', module)
 
@@ -47,43 +47,45 @@ stories.add('table components - cells can wrap', () => (
     <table>
       <thead>
         <TableHeader title="The table header..." />
-        <tr>
+        <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />
           <TableHeadCell text="Date" />
-        </tr>
+        </TableRow>
       </thead>
       <tbody>
         {tableData.map(({ recipe, chef, date }) => (
-          <tr>
+          <TableRow>
             <TableCell>{recipe}</TableCell>
             <TableCell>{chef}</TableCell>
             <TableCell>{date}</TableCell>
-          </tr>
+          </TableRow>
         ))}
       </tbody>
     </table>
   </div>
 ))
 
+const ExpandableChildren = <TableCell>Some expandable content</TableCell>
+
 stories.add('table components - cells no wrap', () => (
   <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
     <table>
       <thead>
         <TableHeader title="The table header..." />
-        <tr>
+        <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />
           <TableHeadCell text="Date" />
-        </tr>
+        </TableRow>
       </thead>
       <tbody>
         {tableData.map(({ recipe, chef, date }) => (
-          <tr>
+          <TableRow expanded={true} expandableChildren={ExpandableChildren}>
             <TableCell canWrap={false}>{recipe}</TableCell>
             <TableCell canWrap={false}>{chef}</TableCell>
             <TableCell canWrap={false}>{date}</TableCell>
-          </tr>
+          </TableRow>
         ))}
       </tbody>
     </table>

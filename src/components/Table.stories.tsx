@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import React, { useState } from 'react'
-import { Checkbox } from './Checkbox'
+import React from 'react'
 import { TableCell, TableHeadCell, TableHeader } from './Table'
 
 const stories = storiesOf('Table', module)
@@ -43,37 +42,50 @@ const tableData = [
   },
 ]
 
-stories.add('table components - WIP', () =>
-  React.createElement(() => {
-    const [tableCellWrap, setTableCellWrap] = useState(true)
+stories.add('table components - cells can wrap', () => (
+  <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
+    <table>
+      <thead>
+        <TableHeader title="The table header..." />
+        <tr>
+          <TableHeadCell text="Recipe" />
+          <TableHeadCell text="Chef" />
+          <TableHeadCell text="Date" />
+        </tr>
+      </thead>
+      <tbody>
+        {tableData.map(({ recipe, chef, date }) => (
+          <tr>
+            <TableCell>{recipe}</TableCell>
+            <TableCell>{chef}</TableCell>
+            <TableCell>{date}</TableCell>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+))
 
-    return (
-      <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
-        <Checkbox
-          label="Table cells can wrap"
-          onChange={setTableCellWrap}
-          checked={tableCellWrap}
-        />
-        <table>
-          <thead>
-            <TableHeader title="The table header..." />
-            <tr>
-              <TableHeadCell text="Recipe" />
-              <TableHeadCell text="Chef" />
-              <TableHeadCell text="Date" />
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.map(({ recipe, chef, date }) => (
-              <tr>
-                <TableCell canWrap={tableCellWrap}>{recipe}</TableCell>
-                <TableCell canWrap={tableCellWrap}>{chef}</TableCell>
-                <TableCell canWrap={tableCellWrap}>{date}</TableCell>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    )
-  }),
-)
+stories.add('table components - cells no wrap', () => (
+  <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
+    <table>
+      <thead>
+        <TableHeader title="The table header..." />
+        <tr>
+          <TableHeadCell text="Recipe" />
+          <TableHeadCell text="Chef" />
+          <TableHeadCell text="Date" />
+        </tr>
+      </thead>
+      <tbody>
+        {tableData.map(({ recipe, chef, date }) => (
+          <tr>
+            <TableCell canWrap={false}>{recipe}</TableCell>
+            <TableCell canWrap={false}>{chef}</TableCell>
+            <TableCell canWrap={false}>{date}</TableCell>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+))

@@ -1,3 +1,4 @@
+import { text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 import { Table, TableBody, TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
@@ -44,8 +45,8 @@ const tableData = [
 
 stories.add('table components - cells can wrap', () => (
   <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
-    <Table>
-      <TableHeader title="The table header...">
+    <Table className={text('className', 'custom-table')}>
+      <TableHeader>
         <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />
@@ -69,8 +70,8 @@ const ExpandableChildren = <TableCell>Some expandable content</TableCell>
 
 stories.add('table components - cells no wrap', () => (
   <div style={{ width: '50%', fontFamily: 'sans-serif' }}>
-    <Table>
-      <TableHeader title="The table header...">
+    <Table className={text('className', 'custom-table')}>
+      <TableHeader>
         <TableRow>
           <TableHeadCell text="Recipe" />
           <TableHeadCell text="Chef" />

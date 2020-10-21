@@ -1,25 +1,62 @@
 import { mount } from 'enzyme'
 import React from 'react'
-import { TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
+import { Table, TableBody, TableCell, TableHeadCell, TableHeader, TableRow } from './Table'
 import 'jest-styled-components'
 
 describe('Table', () => {
+  it('renders Table defaults', () => {
+    const wrapper = mount(
+      <Table className="my-classname">
+        <tbody>
+          <tr>
+            <TableCell>
+              <p>content</p>
+            </TableCell>
+          </tr>
+        </tbody>
+      </Table>,
+    )
+
+    const table = wrapper.find('table')
+    expect(table.prop('className')).toEqual('my-classname')
+  })
+
+  describe('TableBody', () => {
+    it('renders TableBody defaults', () => {
+      const wrapper = mount(
+        <table>
+          <TableBody className="my-classname">
+            <tr>
+              <TableCell>
+                <p>content</p>
+              </TableCell>
+            </tr>
+          </TableBody>
+        </table>,
+      )
+
+      const tableBody = wrapper.find('tbody')
+      expect(tableBody.prop('className')).toEqual('my-classname')
+    })
+  })
+
   describe('TableHeader', () => {
     it('renders with a title and children', () => {
       const wrapper = mount(
         <table>
-          <TableHeader title="some title">
+          <TableHeader className="my-classname">
             <tr>
               <td>some content</td>
             </tr>
           </TableHeader>
         </table>,
       )
-      const title = wrapper.find('h3')
-      expect(title.text()).toEqual('some title')
       const container = wrapper.find('thead')
-      const span = container.find('td').at(1)
+      const span = container.find('td').at(0)
       expect(span.text()).toEqual('some content')
+
+      const tableHeader = wrapper.find('thead')
+      expect(tableHeader.prop('className')).toEqual('my-classname')
     })
   })
 

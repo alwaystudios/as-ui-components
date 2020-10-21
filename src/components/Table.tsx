@@ -1,19 +1,16 @@
 import React, { FunctionComponent } from 'react'
 import styled from 'styled-components'
 
-export const Table = styled.table``
+export const Table: FunctionComponent<{ className?: string }> = ({ className, children }) => (
+  <table className={className}>{children}</table>
+)
 
-export const TableBody = styled.tbody``
+export const TableBody: FunctionComponent<{ className?: string }> = ({ className, children }) => (
+  <tbody className={className}>{children}</tbody>
+)
 
-export const TableHeader: FunctionComponent<{ title: string }> = ({ title, children }) => (
-  <thead>
-    <tr>
-      <td>
-        <h3>{title}</h3>
-      </td>
-    </tr>
-    {children}
-  </thead>
+export const TableHeader: FunctionComponent<{ className?: string }> = ({ className, children }) => (
+  <thead className={className}>{children}</thead>
 )
 
 const Row = styled.tr`

@@ -34,8 +34,8 @@ import {
   TableRow,
 } from './components/Table'
 import { useAsync, AsyncState } from './hooks/useAsync'
-import { useThrottleRequests } from './hooks/useThrottleRequests'
-import { ThrottleProgress, ThrottleActions } from './hooks/useThrottleRequests/throttleTypes'
+import { useThrottledRequests } from './hooks/useThrottledRequests'
+import { ThrottleProgress, ThrottleActions } from './hooks/useThrottledRequests/throttleTypes'
 
 export {
   Button,
@@ -56,7 +56,7 @@ export {
   deleteCookie,
   useAsync,
   AsyncState,
-  useThrottleRequests,
+  useThrottledRequests,
   ThrottleProgress,
   ThrottleActions,
   EmailIcon,

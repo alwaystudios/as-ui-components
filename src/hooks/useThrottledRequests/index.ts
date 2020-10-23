@@ -4,7 +4,7 @@ import { queueRequests, requestSucceededWithData, requestFailedWithError } from 
 
 const MAX_PARALLEL_REQUESTS = 10
 
-export const useThrottleRequests = <T>(maxParallelRequests = MAX_PARALLEL_REQUESTS) => {
+export const useThrottledRequests = <T>(maxParallelRequests = MAX_PARALLEL_REQUESTS) => {
   const [throttleProgress, dispatch] = useReducer(throttleReducer, createThrottleProgress<T>(0))
 
   const throttleActions = useMemo(() => {

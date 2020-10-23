@@ -103,31 +103,39 @@ Resolves an async function
   }, [callback, state]);
 ```
 
-### useThrottleRequests
+### useThrottledRequests
 
 Async request parallel execution engine with throttling
 
 ```
-  const { throttle, updateThrottle } = useThrottleRequests(10) // max parallelisation = 10
+  const { throttleActions, throttleProgress } = useThrottleRequests(10) // max parallelisation = 10
   const sampleApiCall = async () => {
     try {
       const response = await fetch(...)
       const response = await response.json()
 
-      updateThrottle.requestSucceededWithData(response)
+      throttleActions.requestSucceededWithData(response)
     } catch (error) {
-      updateThrottle.requestFailedWithError(error)
+      throttleActions.requestFailedWithError(error)
     }
   }
 
   const { state, callback } = useAsync(async() => {
       const requestsToMake = [sampleApiCall, /** some other api calls **/]
-      await updateThrottle.queueRequests(requestsToMake);
+      await throttleActions.queueRequests(requestsToMake);
   });
 
-  useEffect(() => {
-    if (!state.called) {
-      callback();
-    }
-  }, [callback, state]);
+  ...
+
+  <button onClick={callback}>Fire</button>
+  {JSON.stringify(state)}
+  {throttleProgress.loading && <div>Loading</div>}
+  {throttleProgress.values.length > 0 && (
+    <div>
+      {throttleProgress.values.length} requests completed successfully
+    </div>
+  )}
+  {throttleProgress.errors.length > 0 && (
+    <div>{throttleProgress.errors.length} requests errored</div>
+  )}
 ```

@@ -102,3 +102,32 @@ Resolves an async function
     }
   }, [callback, state]);
 ```
+
+### useThrottleRequests
+
+Async request parallel execution engine with throttling
+
+```
+  const { throttle, updateThrottle } = useThrottleRequests(10) // max parallelisation = 10
+  const sampleApiCall = async () => {
+    try {
+      const response = await fetch(...)
+      const response = await response.json()
+
+      updateThrottle.requestSucceededWithData(response)
+    } catch (error) {
+      updateThrottle.requestFailedWithError(error)
+    }
+  }
+
+  const { state, callback } = useAsync(async() => {
+      const requestsToMake = [sampleApiCall, /** some other api calls **/]
+      await updateThrottle.queueRequests(requestsToMake);
+  });
+
+  useEffect(() => {
+    if (!state.called) {
+      callback();
+    }
+  }, [callback, state]);
+```

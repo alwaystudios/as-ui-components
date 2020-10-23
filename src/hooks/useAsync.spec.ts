@@ -21,7 +21,7 @@ describe('use async', () => {
     )
 
     act(() => {
-      result.current.callBack()
+      result.current.callback()
     })
 
     expect(result.current.state.loading).toBe(true)
@@ -46,7 +46,7 @@ describe('use async', () => {
     )
 
     act(() => {
-      result.current.callBack()
+      result.current.callback()
     })
 
     expect(result.current.state.loading).toBe(true)

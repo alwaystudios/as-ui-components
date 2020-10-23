@@ -18,7 +18,7 @@ type AsyncReturnType<T extends (...args: any) => any> = T extends (...args: any)
 export const useAsync = <R extends (...args: any) => Promise<any>>(
   asyncFunction: R,
 ): {
-  callBack: (...args: Parameters<R>) => Promise<void>
+  callback: (...args: Parameters<R>) => Promise<void>
   state: {
     data: AsyncReturnType<R> | null
     loading: boolean
@@ -35,7 +35,7 @@ export const useAsync = <R extends (...args: any) => Promise<any>>(
 
   type Arguments = Parameters<typeof asyncFunction>
 
-  const callBack = useCallback(
+  const callback = useCallback(
     async (...args: Arguments) => {
       setLoading(true)
       try {
@@ -51,5 +51,5 @@ export const useAsync = <R extends (...args: any) => Promise<any>>(
     [asyncFunction],
   )
 
-  return { callBack, state: { data, loading, error, called } }
+  return { callback, state: { data, loading, error, called } }
 }

@@ -33,6 +33,7 @@ import {
   TableHeader,
   TableRow,
 } from './components/Table'
+import { useAsync, AsyncState } from './hooks/useAsync'
 
 export {
   Button,
@@ -51,6 +52,8 @@ export {
   setCookie,
   getCookie,
   deleteCookie,
+  useAsync,
+  AsyncState,
   EmailIcon,
   ResizeIcon,
   ArrowIcon,

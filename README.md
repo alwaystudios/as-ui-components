@@ -85,3 +85,20 @@ Hook that supports server side rendering when using the Window object
     getCookie('cookie-name')
     deleteCookie('cookie-name')
 ```
+
+### useAsync
+
+Resolves an async function
+
+```
+  const { state, callback } = useAsync(async () => {
+    await promiseTimeout(2000);
+    return "test";
+  });
+
+  useEffect(() => {
+    if (!state.called) {
+      callback();
+    }
+  }, [callback, state]);
+```

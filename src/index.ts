@@ -39,8 +39,10 @@ import { ThrottleProgress, ThrottleActions } from './hooks/useThrottledRequests/
 import { InstagramIcon } from './components/icons/InstagremIcon'
 import { CopyIcon } from './components/icons/CopyIcon'
 import { CopyToClipboard } from './components/CopyToClipboard'
+import { FileUpload } from './components/FileUpload'
 
 export {
+  FileUpload,
   CopyToClipboard,
   Button,
   TextInput,

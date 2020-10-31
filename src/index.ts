@@ -42,6 +42,7 @@ import { CopyToClipboard } from './components/CopyToClipboard'
 import { FileUpload } from './components/FileUpload'
 import { CsrfToken } from './components/CsrfToken'
 import { ContentSwitcher } from './components/ContentSwitcher'
+import { SearchIcon } from './components/icons/SearchIcon'
 
 export {
   ContentSwitcher,
@@ -90,4 +91,5 @@ export {
   HistoryIcon,
   InstagramIcon,
   CopyIcon,
+  SearchIcon,
 }

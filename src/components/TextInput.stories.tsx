@@ -29,6 +29,8 @@ stories.add('with interactive state - type "invalid" to show validation state', 
 
 stories.add('renders with text', () => <TextInput value="some text" />)
 
+stories.add('renders with search icon', () => <TextInput isSearch={true} value="some text" />)
+
 stories.add('renders with on clear button', () => (
   <TextInput
     onClear={() => {

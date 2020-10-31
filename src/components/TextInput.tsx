@@ -2,6 +2,7 @@ import React, { FunctionComponent, useRef } from 'react'
 import styled, { css } from 'styled-components'
 import { ErrorIcon } from './icons/ErrorIcon'
 import { LockIcon } from './icons/LockIcon'
+import { SearchIcon } from './icons/SearchIcon'
 import { WarningIcon } from './icons/WarningIcon'
 
 const Container = styled.div`
@@ -41,11 +42,13 @@ const Container = styled.div`
 `
 
 type Props = {
+  isSearch?: boolean
   isInvalid?: boolean
   onClear?: () => void
 } & React.HTMLProps<HTMLInputElement>
 
 export const TextInput: FunctionComponent<Props> = ({
+  isSearch,
   disabled,
   onClear,
   isInvalid,
@@ -61,6 +64,10 @@ export const TextInput: FunctionComponent<Props> = ({
   const icon = disabled ? (
     <span>
       <LockIcon size="21px" />
+    </span>
+  ) : isSearch ? (
+    <span>
+      <SearchIcon size="21px" />
     </span>
   ) : isInvalid ? (
     <span className="clickable" onClick={handleClick}>

@@ -48,6 +48,7 @@ Children should render the components of the data, e.g.
 - MapsIcon
 - ResizeIcon (horzontal | vertical)
 - SaveIcon
+- SearchIcon
 - SuccessIcon
 - TelephoneIcon
 - UnLockIcon

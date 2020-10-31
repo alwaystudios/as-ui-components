@@ -21,6 +21,7 @@ import { TelephoneIcon } from './TelephoneIcon'
 import { ResizeIcon } from './ResizeIcon'
 import { InstagramIcon } from './InstagremIcon'
 import { CopyIcon } from './CopyIcon'
+import { SearchIcon } from './SearchIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -44,6 +45,7 @@ stories.add('MapsIcon', () => <MapsIcon size="40px" />)
 stories.add('ResizeIcon - vertical', () => <ResizeIcon size="40px" direction="vertical" />)
 stories.add('ResizeIcon - horizontal', () => <ResizeIcon size="40px" direction="horizontal" />)
 stories.add('SaveIcon', () => <SaveIcon size="40px" />)
+stories.add('SearchIcon', () => <SearchIcon size="40px" />)
 stories.add('SuccessIcon', () => <SuccessIcon size="40px" />)
 stories.add('TelephoneIcon', () => <TelephoneIcon size="40px" />)
 stories.add('UnLockIcon', () => <UnLockIcon size="40px" />)

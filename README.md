@@ -20,7 +20,7 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
 ### SortableList
 
-Children should a component render of the data, e.g.
+Children should render the components of the data, e.g.
 
 ```
     <SortableList data={data} setData={setData}>
@@ -35,6 +35,7 @@ Children should a component render of the data, e.g.
 - AlarmIcon
 - ArrowIcon (up | down | left | right)
 - ClockIcon
+- CopyIcon
 - DinnerPlateIcon
 - DustbinIcon
 - EmailIcon

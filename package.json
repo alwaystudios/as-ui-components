@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "license": "MIT",
   "repository": "git@github.com:alwaystudios/as-ui-components.git",
   "engines": {
@@ -33,6 +33,7 @@
   "dependencies": {
     "@alwaystudios/as-utils": "^1.0.8",
     "array-move": "^3.0.1",
+    "copy-to-clipboard": "^3.3.1",
     "react-sortable-hoc": "^1.11.0",
     "shortid": "^2.2.15",
     "styled-components": "^5.2.0",

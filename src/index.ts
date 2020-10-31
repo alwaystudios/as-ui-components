@@ -37,8 +37,11 @@ import { useAsync, AsyncState } from './hooks/useAsync'
 import { useThrottledRequests } from './hooks/useThrottledRequests'
 import { ThrottleProgress, ThrottleActions } from './hooks/useThrottledRequests/throttleTypes'
 import { InstagramIcon } from './components/icons/InstagremIcon'
+import { CopyIcon } from './components/icons/CopyIcon'
+import { CopyToClipboard } from './components/CopyToClipboard'
 
 export {
+  CopyToClipboard,
   Button,
   TextInput,
   SortableList,
@@ -80,4 +83,5 @@ export {
   WarningIcon,
   HistoryIcon,
   InstagramIcon,
+  CopyIcon,
 }

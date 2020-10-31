@@ -20,6 +20,7 @@ import { LinkedInIcon } from './LinkedIn'
 import { TelephoneIcon } from './TelephoneIcon'
 import { ResizeIcon } from './ResizeIcon'
 import { InstagramIcon } from './InstagremIcon'
+import { CopyIcon } from './CopyIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -29,6 +30,7 @@ stories.add('DownArrowIcon', () => <ArrowIcon direction="down" size="40px" />)
 stories.add('LeftArrowIcon', () => <ArrowIcon direction="left" size="40px" />)
 stories.add('RightArrowIcon', () => <ArrowIcon direction="right" size="40px" />)
 stories.add('ClockIcon', () => <ClockIcon size="40px" />)
+stories.add('CopyIcon', () => <CopyIcon size="40px" />)
 stories.add('DinnerPlateIcon', () => <DinnerPlateIcon size="40px" />)
 stories.add('DustbinIcon', () => <DustbinIcon size="40px" />)
 stories.add('EmailIcon', () => <EmailIcon size="40px" />)

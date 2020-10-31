@@ -40,8 +40,10 @@ import { InstagramIcon } from './components/icons/InstagremIcon'
 import { CopyIcon } from './components/icons/CopyIcon'
 import { CopyToClipboard } from './components/CopyToClipboard'
 import { FileUpload } from './components/FileUpload'
+import { CsrfToken } from './components/CsrfToken'
 
 export {
+  CsrfToken,
   FileUpload,
   CopyToClipboard,
   Button,

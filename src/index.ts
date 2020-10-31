@@ -41,8 +41,10 @@ import { CopyIcon } from './components/icons/CopyIcon'
 import { CopyToClipboard } from './components/CopyToClipboard'
 import { FileUpload } from './components/FileUpload'
 import { CsrfToken } from './components/CsrfToken'
+import { ContentSwitcher } from './components/ContentSwitcher'
 
 export {
+  ContentSwitcher,
   CsrfToken,
   FileUpload,
   CopyToClipboard,

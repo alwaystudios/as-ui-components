@@ -41,6 +41,7 @@ Children should a component render of the data, e.g.
 - ErrorIcon
 - FacebookIcon
 - HistoryIcon
+- InstagramIcon
 - LinkedInIcon
 - LockIcon
 - MapsIcon

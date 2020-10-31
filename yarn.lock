@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@alwaystudios/as-utils@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@alwaystudios/as-utils/-/as-utils-1.0.6.tgz#08c28cc6ef5a092059ab2a43d8a1fdefbc9b0b89"
-  integrity sha512-LrgJZKq1H5zGtNcmqrVv3d1+BBbj9H5QDUrQwpnv/O20UPIODSmKuDV71Wzl+NAPNbAsQEKUrAIRqPermDiq2g==
+"@alwaystudios/as-utils@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@alwaystudios/as-utils/-/as-utils-1.0.8.tgz#63f8476d1b69cdf54c2cd02b74593e738cc208c6"
+  integrity sha512-K4hh/3Cvln8Z1h6e1EgFUiEi/MbvdfbG76dqvLygBnMiqQCqXsfKuVe7W3zyLGlmJPEi6ZXPicMS7y/4Ja8oFw==
   dependencies:
     promised-csv "^1.0.1"
 

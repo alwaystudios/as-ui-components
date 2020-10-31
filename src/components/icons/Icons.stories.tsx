@@ -19,6 +19,7 @@ import { FacebookIcon } from './FacebookIcon'
 import { LinkedInIcon } from './LinkedIn'
 import { TelephoneIcon } from './TelephoneIcon'
 import { ResizeIcon } from './ResizeIcon'
+import { InstagramIcon } from './InstagremIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -34,6 +35,7 @@ stories.add('EmailIcon', () => <EmailIcon size="40px" />)
 stories.add('FacebookIcon', () => <FacebookIcon size="40px" />)
 stories.add('ErrorIcon', () => <ErrorIcon size="40px" />)
 stories.add('HistoryIcon', () => <HistoryIcon size="40px" />)
+stories.add('InstagramIcon', () => <InstagramIcon size="40px" />)
 stories.add('LinkedInIcon', () => <LinkedInIcon size="40px" />)
 stories.add('LockIcon', () => <LockIcon size="40px" />)
 stories.add('MapsIcon', () => <MapsIcon size="40px" />)

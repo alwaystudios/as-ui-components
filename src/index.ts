@@ -36,6 +36,7 @@ import {
 import { useAsync, AsyncState } from './hooks/useAsync'
 import { useThrottledRequests } from './hooks/useThrottledRequests'
 import { ThrottleProgress, ThrottleActions } from './hooks/useThrottledRequests/throttleTypes'
+import { InstagramIcon } from './components/icons/InstagremIcon'
 
 export {
   Button,
@@ -78,4 +79,5 @@ export {
   SuccessIcon,
   WarningIcon,
   HistoryIcon,
+  InstagramIcon,
 }

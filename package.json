@@ -1,10 +1,11 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "license": "MIT",
+  "repository": "git@github.com:alwaystudios/as-ui-components.git",
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -20,7 +21,8 @@
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write 'src/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
-    "clean": "sh cleanup.sh"
+    "clean": "sh cleanup.sh",
+    "upgrade-libs": "yarn upgrade @alwaystudios/as-utils@latest"
   },
   "husky": {
     "hooks": {
@@ -29,7 +31,7 @@
     }
   },
   "dependencies": {
-    "@alwaystudios/as-utils": "^1.0.6",
+    "@alwaystudios/as-utils": "^1.0.8",
     "array-move": "^3.0.1",
     "react-sortable-hoc": "^1.11.0",
     "shortid": "^2.2.15",

@@ -82,3 +82,18 @@
 .bx--content-switcher-btn:hover + .bx--content-switcher-btn::before {
   background-color: transparent;
 }
+
+.bx--content-switcher-btn.bx--content-switcher--selected {
+  background-color: #161616;
+  color: #ffffff;
+  z-index: 3;
+}
+
+.bx--content-switcher-btn.bx--content-switcher--selected:disabled {
+  background-color: #8d8d8d;
+  color: #c6c6c6;
+}
+
+.bx--content-switcher-btn.bx--content-switcher--selected .bx--content-switcher__icon {
+  fill: #ffffff;
+}

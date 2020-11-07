@@ -44,6 +44,7 @@ import { CsrfToken } from './components/CsrfToken'
 import { ContentSwitcher } from './components/ContentSwitcher'
 import { SearchIcon } from './components/icons/SearchIcon'
 import { useEffectAsync } from './hooks/useEffectAsync'
+import { TextInputWithConfirmation } from './components/TextInputWithConfirmation'
 
 export {
   ContentSwitcher,
@@ -52,6 +53,7 @@ export {
   CopyToClipboard,
   Button,
   TextInput,
+  TextInputWithConfirmation,
   SortableList,
   Checkbox,
   TableHeadCell,

@@ -9,14 +9,19 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
 - Button
 - Checkbox
+- ContentSwitcher
+- CopyToClipboard
+- CsrfToken
+- FileUpload
 - SortableList
-- Table,
-- TableBody,
-- TableCell,
-- TableHeadCell,
-- TableHeader,
-- TableRow,
+- Table
+- TableBody
+- TableCell
+- TableHeadCell
+- TableHeader
+- TableRow
 - TextInput
+- TextInputWithConfirmation
 
 ### SortableList
 

@@ -106,6 +106,17 @@ Resolves an async function
   }, [callback, state]);
 ```
 
+### useEffectAsync
+
+useEffect for asyn functions
+
+```
+  useEffectAsync(async () => {
+    await promiseTimeout(2000);
+    return "test";
+  }, []);
+```
+
 ### useThrottledRequests
 
 Async request parallel execution engine with throttling

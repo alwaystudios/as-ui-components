@@ -45,9 +45,11 @@ import { ContentSwitcher } from './components/ContentSwitcher'
 import { SearchIcon } from './components/icons/SearchIcon'
 import { useEffectAsync } from './hooks/useEffectAsync'
 import { TextInputWithConfirmation } from './components/TextInputWithConfirmation'
+import { ContextMenu } from './components/ContextMenu'
 
 export {
   ContentSwitcher,
+  ContextMenu,
   CsrfToken,
   FileUpload,
   CopyToClipboard,

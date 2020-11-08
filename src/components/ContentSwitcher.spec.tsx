@@ -1,6 +1,6 @@
+import { noop } from '@alwaystudios/as-utils'
 import { shallow } from 'enzyme'
 import React from 'react'
-import { noop } from '../noop'
 import { ContentSwitcher } from './ContentSwitcher'
 
 const options = ['Option A', 'Option B', 'Option C']

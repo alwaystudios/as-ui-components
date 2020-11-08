@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { text, boolean, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import { TextInputWithConfirmation } from './TextInputWithConfirmation'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 const stories = storiesOf('Text input with confirmation', module)
 

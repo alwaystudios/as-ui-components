@@ -1,6 +1,5 @@
-import { promiseTimeout } from '@alwaystudios/as-utils'
+import { promiseTimeout, waitUntil } from '@alwaystudios/as-utils'
 import { cleanup, renderHook } from '@testing-library/react-hooks'
-import { waitUntil } from '../waitUntil'
 import { useEffectAsync } from './useEffectAsync'
 
 describe('use effect async', () => {

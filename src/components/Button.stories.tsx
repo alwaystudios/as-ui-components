@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { Button } from './Button'
 import { boolean, number, text } from '@storybook/addon-knobs'
 import { AlarmIcon } from './icons/AlarmIcon'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 const stories = storiesOf('Button', module)
 

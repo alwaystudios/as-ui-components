@@ -1,7 +1,7 @@
+import { noop } from '@alwaystudios/as-utils'
 import { boolean, text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
-import { noop } from '../noop'
 import { Checkbox } from './Checkbox'
 
 const stories = storiesOf('Checkbox', module)

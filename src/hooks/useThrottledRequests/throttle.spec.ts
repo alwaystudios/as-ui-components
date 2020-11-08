@@ -1,4 +1,4 @@
-import { waitUntil } from '../../waitUntil'
+import { waitUntil } from '@alwaystudios/as-utils'
 import {
   createThrottleProgress,
   throttleReducer,

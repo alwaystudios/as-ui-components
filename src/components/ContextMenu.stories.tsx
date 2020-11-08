@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { ContextMenu } from './ContextMenu'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 const stories = storiesOf('ContextMenu', module)
 

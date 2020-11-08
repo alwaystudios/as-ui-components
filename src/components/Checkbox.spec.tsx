@@ -1,7 +1,7 @@
 import React from 'react'
 import { Checkbox } from './Checkbox'
 import { mount } from 'enzyme'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 describe('Checkbox', () => {
   it('renders with label and id, not checked by default', () => {

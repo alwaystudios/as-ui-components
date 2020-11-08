@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
 import { boolean, text } from '@storybook/addon-knobs'
 import { ContentSwitcher } from './ContentSwitcher'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 const stories = storiesOf('ContentSwitcher', module)
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FileUpload } from './FileUpload'
 import { boolean, text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 const stories = storiesOf('FileUpload', module)
 

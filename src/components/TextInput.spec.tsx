@@ -1,6 +1,6 @@
+import { noop } from '@alwaystudios/as-utils'
 import { mount } from 'enzyme'
 import React from 'react'
-import { noop } from '../noop'
 import { ErrorIcon } from './icons/ErrorIcon'
 import { LockIcon } from './icons/LockIcon'
 import { TextInput } from './TextInput'

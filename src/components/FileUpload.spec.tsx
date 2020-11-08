@@ -1,7 +1,7 @@
 import { FileUpload } from './FileUpload'
 import React from 'react'
 import { mount } from 'enzyme'
-import { noop } from '../noop'
+import { noop } from '@alwaystudios/as-utils'
 
 describe('FileUpload', () => {
   beforeEach(jest.resetAllMocks)

@@ -21,6 +21,8 @@ http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 - TableHeadCell
 - TableHeader
 - TableRow
+- TextArea
+- TextAreaWithConfirmation
 - TextInput
 - TextInputWithConfirmation
 

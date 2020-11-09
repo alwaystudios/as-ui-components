@@ -10,6 +10,7 @@ const Container = styled.div`
 
   & input {
     border: 1px solid #585858;
+    border-radius: 4px;
 
     ${({ isInvalid }: { isInvalid: boolean }) =>
       isInvalid &&
@@ -21,7 +22,7 @@ const Container = styled.div`
     width: 100%;
     font-size: large;
     text-indent: 0.3rem;
-    height: 1.5rem;
+    height: 2rem;
     padding-top: 0.3rem;
     padding-bottom: 0.2rem;
   }
@@ -37,7 +38,7 @@ const Container = styled.div`
   & span > svg {
     position: relative;
     margin-left: -1.8rem;
-    top: 0.5rem;
+    top: 0.7rem;
   }
 `
 
@@ -75,7 +76,7 @@ export const TextInput: FunctionComponent<Props> = ({
     </span>
   ) : onClear ? (
     <span className="clickable" onClick={handleClick}>
-      <ErrorIcon size="21px" />
+      <ErrorIcon size="21px" fill="black" />
     </span>
   ) : null
   const _disabled = Boolean(disabled)

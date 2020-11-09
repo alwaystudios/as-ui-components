@@ -46,8 +46,12 @@ import { SearchIcon } from './components/icons/SearchIcon'
 import { useEffectAsync } from './hooks/useEffectAsync'
 import { TextInputWithConfirmation } from './components/TextInputWithConfirmation'
 import { ContextMenu } from './components/ContextMenu'
+import { TextArea } from './components/TextArea'
+import { TextAreaWithConfirmation } from './components/TextAreaWithConfirmation'
 
 export {
+  TextArea,
+  TextAreaWithConfirmation,
   ContentSwitcher,
   ContextMenu,
   CsrfToken,

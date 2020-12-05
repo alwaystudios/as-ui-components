@@ -48,8 +48,10 @@ import { TextInputWithConfirmation } from './components/TextInputWithConfirmatio
 import { ContextMenu } from './components/ContextMenu'
 import { TextArea } from './components/TextArea'
 import { TextAreaWithConfirmation } from './components/TextAreaWithConfirmation'
+import { useShoppingCart } from './hooks/useShoppingCart'
 
 export {
+  useShoppingCart,
   TextArea,
   TextAreaWithConfirmation,
   ContentSwitcher,

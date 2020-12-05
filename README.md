@@ -161,3 +161,20 @@ Async request parallel execution engine with throttling
     <div>{throttleProgress.errors.length} requests errored</div>
   )}
 ```
+
+### useShoppingCart
+
+MyProductType must have an id of type number or string
+
+```
+  const myProduct = {
+    id: 1,
+    name: 'Apples'
+  }
+
+  const { items, updateCart, removeProduct } = <MyProductType>useShoppingCart()
+
+  updateCart(myProduct, 2)
+  updateCart(myProduct, -1) // 1 apple now in cart
+  removeProduct(myProduct) // cart empty
+```

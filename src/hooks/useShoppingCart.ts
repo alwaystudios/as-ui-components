@@ -30,5 +30,7 @@ export const useShoppingCart = <T extends Product>() => {
     setItems({ ...dissoc(`${product.id}`, items) })
   }
 
-  return { items, updateCart, removeProduct }
+  const clearCart = () => setItems({})
+
+  return { items, updateCart, removeProduct, clearCart }
 }

@@ -172,7 +172,7 @@ MyProductType must have an id of type number or string
     name: 'Apples'
   }
 
-  const { items, updateCart, removeProduct } = <MyProductType>useShoppingCart()
+  const { items, updateCart, removeProduct, clearItems } = <MyProductType>useShoppingCart()
 
   updateCart(myProduct, 2)
   updateCart(myProduct, -1) // 1 apple now in cart

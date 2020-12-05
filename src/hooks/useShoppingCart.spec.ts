@@ -110,4 +110,16 @@ describe('use shopping cart', () => {
       [products[2].id]: { product: products[2], quantity: 1 },
     })
   })
+
+  it('clears the shopping cart', () => {
+    const products = testProducts(3)
+    const { result } = renderHook(() => useShoppingCart<TestProduct>())
+
+    act(() => result.current.updateCart(products[0]))
+    act(() => result.current.updateCart(products[1]))
+    act(() => result.current.updateCart(products[2]))
+    act(() => result.current.clearCart())
+
+    expect(result.current.items).toEqual({})
+  })
 })

@@ -41,8 +41,6 @@ export const throttleRequests = async (requests: Requests, maxParallelRequests: 
 
   for (const request of requests) {
     const promise = request().then((res) => {
-      // eslint-disable-next-line functional/immutable-data
-      queue.splice(queue.indexOf(promise), 1)
       return res
     })
     // eslint-disable-next-line functional/immutable-data

@@ -69,9 +69,9 @@ describe('throttle progress', () => {
   describe('throttleRequests', () => {
     it('throttles requests', async () => {
       const request = jest.fn().mockResolvedValue('test')
-      await throttleRequests([request, request], 1)
+      await throttleRequests([request, request, request], 1)
       await waitUntil(() => {
-        expect(request).toHaveBeenCalledTimes(2)
+        expect(request).toHaveBeenCalledTimes(3)
       })
     })
   })

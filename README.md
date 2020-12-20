@@ -178,3 +178,74 @@ MyProductType must have an id of type number or string
   updateCart(myProduct, -1) // 1 apple now in cart
   removeProduct(myProduct) // cart empty
 ```
+
+### useStringFilter
+
+Query over a data set
+
+```
+  const data = [
+    { id: 1, name: 'one' },
+    { id: 2, name: 'two' },
+    { id: 13, name: 'thirteen' },
+  ]
+
+  const {
+    queryString,
+    filteredItems,
+    setFilter,
+  } = useStringFilter(data, ['id', 'name'])
+
+  setFilter('1')
+  console.log(filteredItems)
+```
+
+### useDataTable
+
+Implements pagination and filtering for a data table result set
+
+```
+  const data = [
+    { id: 1, name: 'one' },
+    { id: 2, name: 'two' },
+    { id: 13, name: 'thirteen' },
+  ]
+
+  const {
+    currentPage,
+    pageSize,
+    setCurrentPage,
+    setPageSize,
+    items,
+    isItemSelected,
+    totalSelectedItems,
+    totalCurrentItems,
+    filter,
+    setFilter,
+    onPageCheckAll,
+    onCheck,
+    getSelectedData,
+    setIsFiltered,
+    allPageItemsSelected,
+  } = useDataTable(data)
+```
+
+### useOutsideClick
+
+Responds to click events outside of a component
+
+```
+  export const MyComponent = () => {
+    const [toggle, setToggle] = useState(false)
+    const ref = useRef<HTMLDivElement>(null)
+
+    useOutsideClick(ref, () => {
+      setToggle(!toggle);
+    })
+
+    return (
+      <div ref={ref}>{toggle ? <div>toggle ON</div> : <div>toggle OFF</div>}</div>
+    )
+  }
+
+```

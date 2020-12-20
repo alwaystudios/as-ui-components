@@ -49,8 +49,14 @@ import { ContextMenu } from './components/ContextMenu'
 import { TextArea } from './components/TextArea'
 import { TextAreaWithConfirmation } from './components/TextAreaWithConfirmation'
 import { useShoppingCart } from './hooks/useShoppingCart'
+import { useStringFilter } from './hooks/useStringFilter'
+import { useDataTable } from './hooks/useDataTable'
+import { useOutsideClick } from './hooks/useOutsideClick'
 
 export {
+  useOutsideClick,
+  useDataTable,
+  useStringFilter,
   useShoppingCart,
   TextArea,
   TextAreaWithConfirmation,

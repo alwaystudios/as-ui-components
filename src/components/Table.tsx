@@ -27,7 +27,6 @@ type TableRowProps = {
 }
 
 export const TableRow: FunctionComponent<TableRowProps> = ({
-  // selected = false,
   expanded = false,
   expandableChildren,
   children,

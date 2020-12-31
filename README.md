@@ -200,36 +200,6 @@ Query over a data set
   console.log(filteredItems)
 ```
 
-### useDataTable
-
-Implements pagination and filtering for a data table result set
-
-```
-  const data = [
-    { id: 1, name: 'one' },
-    { id: 2, name: 'two' },
-    { id: 13, name: 'thirteen' },
-  ]
-
-  const {
-    currentPage,
-    pageSize,
-    setCurrentPage,
-    setPageSize,
-    items,
-    isItemSelected,
-    totalSelectedItems,
-    totalCurrentItems,
-    filter,
-    setFilter,
-    onPageCheckAll,
-    onCheck,
-    getSelectedData,
-    setIsFiltered,
-    allPageItemsSelected,
-  } = useDataTable(data)
-```
-
 ### useOutsideClick
 
 Responds to click events outside of a component

@@ -2,12 +2,14 @@
 # yarn lockfile v1
 
 
-"@alwaystudios/as-utils@^1.0.13":
-  version "1.0.13"
-  resolved "https://registry.yarnpkg.com/@alwaystudios/as-utils/-/as-utils-1.0.13.tgz#43d64b72860385724fc8427e26e5b6cf7e7564a0"
-  integrity sha512-Zj9oUKwoed1buYv5p7JOeS6hNBHr5eq8en3+WW8zq/paS/KiZVPEzWaUYQWXbQBq93eyn6zK9CE+ZJe8bm6i1A==
+"@alwaystudios/as-utils@^1.0.14":
+  version "1.0.14"
+  resolved "https://registry.yarnpkg.com/@alwaystudios/as-utils/-/as-utils-1.0.14.tgz#b5f3f1e14a824e8dd9c54bf0b9f664953f7fa593"
+  integrity sha512-ZeTqEXxldcunCotSNZMwjzWfqnVljftyhQPl4YbtHiua8W4LdEalBMsXaWdPqiddZ9LBCGwJtbi94j34L63yFQ==
   dependencies:
+    deep-object-diff "^1.1.0"
     promised-csv "^1.0.1"
+    ramda "^0.27.1"
 
 "@babel/code-frame@7.8.3":
   version "7.8.3"

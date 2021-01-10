@@ -7,25 +7,6 @@ React components, icons and hooks
 See storybook for component and icon usage
 http://as-ui-components.s3-website-eu-west-1.amazonaws.com/
 
-- Button
-- Checkbox
-- ContentSwitcher
-- ContextMenu
-- CopyToClipboard
-- CsrfToken
-- FileUpload
-- SortableList
-- Table
-- TableBody
-- TableCell
-- TableHeadCell
-- TableHeader
-- TableRow
-- TextArea
-- TextAreaWithConfirmation
-- TextInput
-- TextInputWithConfirmation
-
 ### SortableList
 
 Children should render the components of the data, e.g.

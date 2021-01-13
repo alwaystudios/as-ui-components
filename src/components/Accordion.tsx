@@ -6,6 +6,7 @@ const Container = styled.div`
   display: block;
   background-color: white;
   border: solid 1px #e0e0e0;
+  padding-bottom: 5px;
 `
 
 export const Accordion: FunctionComponent = ({ children }) => {

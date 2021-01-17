@@ -25,14 +25,6 @@ import { ResizeIcon } from './components/icons/ResizeIcon'
 import { SortableList } from './components/SortableList'
 import { deleteCookie, getCookie, setCookie } from './hooks/useCookie'
 import { Checkbox } from './components/Checkbox'
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHeadCell,
-  TableHeader,
-  TableRow,
-} from './components/Table'
 import { useAsync, AsyncState } from './hooks/useAsync'
 import { useThrottledRequests } from './hooks/useThrottledRequests'
 import { ThrottleProgress, ThrottleActions } from './hooks/useThrottledRequests/throttleTypes'
@@ -68,12 +60,6 @@ export {
   TextInputWithConfirmation,
   SortableList,
   Checkbox,
-  TableHeadCell,
-  Table,
-  TableBody,
-  TableRow,
-  TableCell,
-  TableHeader,
   useLocalStorage,
   useInterval,
   useWindow,

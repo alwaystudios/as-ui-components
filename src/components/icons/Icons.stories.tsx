@@ -22,6 +22,8 @@ import { ResizeIcon } from './ResizeIcon'
 import { InstagramIcon } from './InstagremIcon'
 import { CopyIcon } from './CopyIcon'
 import { SearchIcon } from './SearchIcon'
+import { MagnifyingGlassIcon } from './MagnifyingGlassIcon'
+import { CrossIcon } from './CrossIcon'
 
 const stories = storiesOf('Icons', module)
 
@@ -32,6 +34,7 @@ stories.add('LeftArrowIcon', () => <ArrowIcon direction="left" size="40px" />)
 stories.add('RightArrowIcon', () => <ArrowIcon direction="right" size="40px" />)
 stories.add('ClockIcon', () => <ClockIcon size="40px" />)
 stories.add('CopyIcon', () => <CopyIcon size="40px" />)
+stories.add('CrossIcon', () => <CrossIcon />)
 stories.add('DinnerPlateIcon', () => <DinnerPlateIcon size="40px" />)
 stories.add('DustbinIcon', () => <DustbinIcon size="40px" />)
 stories.add('EmailIcon', () => <EmailIcon size="40px" />)
@@ -42,6 +45,9 @@ stories.add('HistoryIcon', () => <HistoryIcon size="40px" />)
 stories.add('InstagramIcon', () => <InstagramIcon size="40px" />)
 stories.add('LinkedInIcon', () => <LinkedInIcon size="40px" />)
 stories.add('LockIcon', () => <LockIcon size="40px" />)
+stories.add('MagnifyingGlassIcon', () => (
+  <MagnifyingGlassIcon fill="white" backgroundFill="black" />
+))
 stories.add('MapsIcon', () => <MapsIcon size="40px" />)
 stories.add('ResizeIcon - vertical', () => <ResizeIcon size="40px" direction="vertical" />)
 stories.add('ResizeIcon - horizontal', () => <ResizeIcon size="40px" direction="horizontal" />)

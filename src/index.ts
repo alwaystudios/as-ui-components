@@ -43,8 +43,14 @@ import { TextAreaWithConfirmation } from './components/TextAreaWithConfirmation'
 import { useShoppingCart } from './hooks/useShoppingCart'
 import { useStringFilter } from './hooks/useStringFilter'
 import { useOutsideClick } from './hooks/useOutsideClick'
+import { CrossIcon } from './components/icons/CrossIcon'
+import { MagnifyingGlassIcon } from './components/icons/MagnifyingGlassIcon'
+import { SearchOverlay } from './components/SearchOverlay'
 
 export {
+  SearchOverlay,
+  MagnifyingGlassIcon,
+  CrossIcon,
   useOutsideClick,
   useStringFilter,
   useShoppingCart,

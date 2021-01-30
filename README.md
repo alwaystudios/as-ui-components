@@ -25,6 +25,7 @@ Children should render the components of the data, e.g.
 - ArrowIcon (up | down | left | right)
 - ClockIcon
 - CopyIcon
+- CrossIcon
 - DinnerPlateIcon
 - DustbinIcon
 - EmailIcon
@@ -34,6 +35,7 @@ Children should render the components of the data, e.g.
 - InstagramIcon
 - LinkedInIcon
 - LockIcon
+- MagnifyingGlassIcon
 - MapsIcon
 - ResizeIcon (horzontal | vertical)
 - SaveIcon

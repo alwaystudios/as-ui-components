@@ -20,19 +20,35 @@ const Container = styled.section`
     width: 200px;
     background: green;
   }
+
+  .dragging {
+    background-color: pink;
+  }
 `
 
 type Props = {
-  rect: any
   setRect: (data: any) => void
 }
 
-const Component: FunctionComponent<Props> = ({ rect, setRect }) => {
+const Component: FunctionComponent<Props> = ({ setRect }) => {
   const ref = useRef<HTMLDivElement>(null)
 
   const getRect = (element: HTMLDivElement) => element.getBoundingClientRect()
   const updateRect = () => {
     ref.current && setRect(getRect(ref.current))
+  }
+
+  const [dragStart, setDragStart] = useState<[number?, number?]>([undefined, undefined])
+  const [dragEnd, setDragEnd] = useState<[number?, number?]>([undefined, undefined])
+
+  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setDragStart([event.clientX, event.clientY])
+    event.currentTarget.classList.toggle('dragging')
+  }
+
+  const handleMouseUp = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setDragEnd([event.clientX, event.clientY])
+    event.currentTarget.classList.toggle('dragging')
   }
 
   const observer = useMemo(() => new MutationObserver(updateRect), [ref])
@@ -49,7 +65,9 @@ const Component: FunctionComponent<Props> = ({ rect, setRect }) => {
 
   return (
     <Container>
-      <div ref={ref} className="aaa"></div>
+      <p>dragStart: {JSON.stringify(dragStart)}</p>
+      <p>dragEnd: {JSON.stringify(dragEnd)}</p>
+      <div ref={ref} className="aaa" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}></div>
       <div className="bbb"></div>
     </Container>
   )
@@ -64,7 +82,7 @@ stories.add('drag to resize and observe', () =>
         <div>
           <p>RECT: {JSON.stringify(rect)}</p>
         </div>
-        <Component rect={rect} setRect={setRect} />
+        <Component setRect={setRect} />
       </>
     )
   }),

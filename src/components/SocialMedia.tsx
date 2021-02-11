@@ -2,8 +2,8 @@ import React, { FunctionComponent } from 'react'
 import './SocialMedia.css'
 
 export const SocialMedia: FunctionComponent = () => (
-  <section>
-    <ul>
+  <section className="sm">
+    <ul className="sm">
       <li>
         <a href="#">
           <span></span>

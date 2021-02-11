@@ -1,16 +1,15 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-section {
+section.sm {
   height: 300px;
 }
 
-ul {
+ul.sm {
   display: flex;
   transform: rotate(-20deg) skew(20deg);
-  transform-style: preserve-3d;
 }
 
-ul li {
+ul.sm li {
   position: relative;
   list-style: none;
   width: 60px;
@@ -19,7 +18,7 @@ ul li {
   border: 1px solid black;
 }
 
-ul li:before {
+ul.sm li:before {
   content: '';
   position: absolute;
   bottom: -10px;
@@ -30,7 +29,7 @@ ul li:before {
   transform: skewX(-41deg);
 }
 
-ul li:after {
+ul.sm li:after {
   content: '';
   position: absolute;
   top: 5px;
@@ -41,7 +40,7 @@ ul li:after {
   transform: skewY(-49deg);
 }
 
-ul li span {
+ul.sm li span {
   position: absolute;
   display: flex !important;
   width: 100%;
@@ -54,64 +53,64 @@ ul li span {
   transition: 0.5s ease-out;
 }
 
-ul li:hover span {
+ul.sm li:hover span {
   border: 1px solid #b8b1b1;
   box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-ul li:hover span:nth-child(5) {
+ul.sm li:hover span:nth-child(5) {
   transform: translate(40px, -40px);
   opacity: 1;
 }
 
-ul li:hover span:nth-child(4) {
+ul.sm li:hover span:nth-child(4) {
   transform: translate(30px, -30px);
   opacity: 0.8;
 }
 
-ul li:hover span:nth-child(3) {
+ul.sm li:hover span:nth-child(3) {
   transform: translate(20px, -20px);
   opacity: 0.6;
 }
 
-ul li:hover span:nth-child(2) {
+ul.sm li:hover span:nth-child(2) {
   transform: translate(10px, -10px);
   opacity: 0.4;
 }
 
-ul li:hover span:nth-child(1) {
+ul.sm li:hover span:nth-child(1) {
   transform: translate(0px, 0px);
   opacity: 0.2;
 }
 
-ul li:nth-child(1) span {
+ul.sm li:nth-child(1) span {
   z-index: 1;
 }
 
-ul li:nth-child(2) span {
+ul.sm li:nth-child(2) span {
   z-index: 2;
 }
 
-ul li:nth-child(3) span {
+ul.sm li:nth-child(3) span {
   z-index: 3;
 }
 
-ul li:nth-child(4) span {
+ul.sm li:nth-child(4) span {
   z-index: 4;
 }
 
-ul li:nth-child(1):hover span {
-  background: #30aa71 !important;
+ul.sm li:nth-child(1):hover span {
+  background: #30aa71;
 }
 
-ul li:nth-child(2):hover span {
-  background: #3553d6 !important;
+ul.sm li:nth-child(2):hover span {
+  background: #3553d6;
 }
 
-ul li:nth-child(3):hover span {
-  background: #ea6e96 !important;
+ul.sm li:nth-child(3):hover span {
+  background: #ea6e96;
 }
 
-ul li:nth-child(4):hover span {
-  background: #fceb00 !important;
+ul.sm li:nth-child(4):hover span {
+  background: #fceb00;
 }

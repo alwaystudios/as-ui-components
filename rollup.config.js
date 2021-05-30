@@ -9,6 +9,7 @@ export default [
     plugins: [
       typescript({
         typescript: require('typescript'),
+        tsconfigOverride: { exclude: ['./src/**/*.spec.*', './src/**/*.stories.*'] },
       }),
       postcss({
         plugins: [],

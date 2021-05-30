@@ -22,7 +22,8 @@
     "format": "prettier --write 'src/**/*.{js,ts,tsx,json,css,md}'",
     "build": "rollup -c",
     "clean": "sh cleanup.sh",
-    "upgrade-libs": "yarn upgrade @alwaystudios/as-utils@latest"
+    "upgrade-libs": "yarn upgrade @alwaystudios/as-utils@latest",
+    "typecheck": "tsc --noEmit"
   },
   "husky": {
     "hooks": {

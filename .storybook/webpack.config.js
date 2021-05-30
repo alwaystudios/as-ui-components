@@ -3,7 +3,7 @@ const path = require('path')
 module.exports = ({ config }) => {
   config.module.rules.push({
     test: /\.tsx?$/,
-    include: [path.resolve(__dirname, '../src/components')],
+    include: [path.resolve(__dirname, '../src')],
     exclude: [/node_modules/, /.*.spec.ts$/],
     use: [
       {

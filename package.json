@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "1.0.43",
+  "version": "2.0.0",
   "license": "MIT",
   "repository": "git@github.com:alwaystudios/as-ui-components.git",
   "engines": {
@@ -48,7 +48,6 @@
     "@storybook/addon-knobs": "^6.0.26",
     "@storybook/addons": "^6.0.26",
     "@storybook/react": "^6.0.26",
-    "@testing-library/react-hooks": "^3.4.2",
     "@types/array-move": "^2.0.0",
     "@types/classnames": "^2.2.11",
     "@types/enzyme": "^3.10.7",

@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled, { css } from 'styled-components'
-import { useWindow } from '../hooks/useWindow'
 
 const MenuOption = styled.div`
   display: flex;
@@ -79,7 +78,7 @@ export const ContextMenu: React.FunctionComponent<ContextMenuProps> = ({
 }) => {
   const [visible, setVisible] = useState(false)
   const [coordinates, setCoordinates] = useState<Coordinates>({ x: 0, y: 0 })
-  const _window = useWindow()
+  const _window = typeof window !== 'undefined' ? window : undefined
   const _document = _window!.document!
 
   const handleRightClick = useCallback(

@@ -1,7 +1,6 @@
 import React, { FunctionComponent, useState, useEffect } from 'react'
 import styled from 'styled-components'
 import { DraggableCore, DraggableEventHandler } from 'react-draggable'
-import { useWindow } from '../hooks/useWindow'
 
 const Wrapper = styled.div`
   position: sticky;
@@ -21,9 +20,9 @@ const Handle = styled.div<{ isDragging: boolean }>`
 `
 
 export const ResizablePanel: FunctionComponent = ({ children }) => {
-  const window = useWindow()
-  const getMaxWidth = () => (window ? window.innerWidth - 300 : 200)
-  const getDefaultWidth = () => getMaxWidth() || (window && 0.4 * window.innerWidth) || 150
+  const _window = typeof window !== 'undefined' ? window : undefined
+  const getMaxWidth = () => (_window ? _window.innerWidth - 300 : 200)
+  const getDefaultWidth = () => getMaxWidth() || (_window && 0.4 * _window.innerWidth) || 150
 
   const [isDragging, setIsDragging] = useState(false)
   const [offsetX, setOffsetX] = useState(0)
@@ -41,8 +40,8 @@ export const ResizablePanel: FunctionComponent = ({ children }) => {
   }
 
   useEffect(() => {
-    window && window.addEventListener('resize', onStop)
-    return () => window && window.removeEventListener('resize', onStop)
+    _window && _window.addEventListener('resize', onStop)
+    return () => _window && _window.removeEventListener('resize', onStop)
   }, [wrapperWidth])
 
   return (

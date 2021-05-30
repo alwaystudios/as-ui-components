@@ -35,8 +35,10 @@ import { TextAreaWithConfirmation } from './TextAreaWithConfirmation'
 import { CrossIcon } from './icons/CrossIcon'
 import { MagnifyingGlassIcon } from './icons/MagnifyingGlassIcon'
 import { SearchOverlay } from './SearchOverlay'
+import { Menu } from './Menu'
 
 export {
+  Menu,
   SearchOverlay,
   MagnifyingGlassIcon,
   CrossIcon,

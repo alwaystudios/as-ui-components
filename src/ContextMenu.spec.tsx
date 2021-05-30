@@ -1,12 +1,13 @@
 import React from 'react'
 import { mount } from 'enzyme'
-import { ContextMenu, ContextMenuOption } from './ContextMenu'
+import { ContextMenu } from './ContextMenu'
 import { act } from 'react-dom/test-utils'
+import { Menu } from './Menu'
 
 const numberOfOptions = 5
 const optionsOnClick = [...Array(numberOfOptions)].map(() => jest.fn())
 const options = [...Array(numberOfOptions)].map(
-  (_, i) => ({ text: `option-${i + 1}`, onClick: () => optionsOnClick[i] } as ContextMenuOption),
+  (_, i) => ({ text: `option-${i + 1}`, onClick: () => optionsOnClick[i] } as MenuOption),
 )
 
 describe('ContextMenu', () => {
@@ -16,13 +17,13 @@ describe('ContextMenu', () => {
 
   it('renders as hidden by default', () => {
     const wrapper = mount(<ContextMenu options={options} />)
-    expect(wrapper.find('.contextMenu')).toHaveLength(0)
+    expect(wrapper.find(Menu).exists()).toBe(false)
   })
 
   it('shows the context menu on right clicked', () => {
     const wrapper = mount(<ContextMenu options={options}>some child</ContextMenu>)
-    wrapper.find('div').simulate('contextmenu')
-    expect(wrapper.find('div.context-menu-option')).toHaveLength(numberOfOptions)
+    wrapper.find('div.context-menu').simulate('contextmenu')
+    expect(wrapper.find(Menu).exists()).toBe(true)
   })
 
   it('removes an open context menu when another element is clicked', () => {
@@ -35,14 +36,14 @@ describe('ContextMenu', () => {
 
     const wrapper = mount(<ContextMenu options={options} />)
     wrapper.find(ContextMenu).simulate('contextmenu')
-    expect(wrapper.find('.context-menu').exists()).toBeTruthy()
+    expect(wrapper.find(Menu).exists()).toBe(true)
 
     act(() => {
       listeners.click({ target: document.createElement('a') })
     })
     wrapper.update()
 
-    expect(wrapper.find('.context-menu').exists()).toBeFalsy()
+    expect(wrapper.find(Menu).exists()).toBe(false)
   })
 
   it('removes an open context menu the document is scrolled', () => {
@@ -55,14 +56,14 @@ describe('ContextMenu', () => {
 
     const wrapper = mount(<ContextMenu options={options} />)
     wrapper.find(ContextMenu).simulate('contextmenu')
-    expect(wrapper.find('.context-menu').exists()).toBeTruthy()
+    expect(wrapper.find(Menu).exists()).toBe(true)
 
     act(() => {
       listeners.scroll()
     })
     wrapper.update()
 
-    expect(wrapper.find('.context-menu').exists()).toBeFalsy()
+    expect(wrapper.find(Menu).exists()).toBe(false)
   })
 
   it('handles menu option click events', () => {
@@ -74,7 +75,7 @@ describe('ContextMenu', () => {
     ]
     const wrapper = mount(<ContextMenu options={options} />)
     wrapper.simulate('contextmenu')
-    const secondMenuItem = wrapper.find('div.context-menu-option').at(1)
+    const secondMenuItem = wrapper.find('li').at(1)
     secondMenuItem.simulate('click')
 
     expect(onClickTwo).toHaveBeenCalledTimes(1)

@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "repository": "git@github.com:alwaystudios/as-ui-components.git",
   "engines": {
@@ -15,7 +15,7 @@
     "access": "public"
   },
   "scripts": {
-    "test": "jest --maxWorkers=4 src",
+    "test": "jest --maxWorkers=4 src --coverage",
     "storybook": "start-storybook -p 3001",
     "build-storybook": "build-storybook",
     "lint": "yarn eslint . --ext .js,.jsx,.ts,.tsx",

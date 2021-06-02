@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from 'react'
 import styled, { css } from 'styled-components'
 import { Menu } from './Menu'
+import { Coordinates, MenuOption } from './types'
 
 const Container = styled.div<{ coordinates: Coordinates }>`
   ${({ coordinates: { x, y } }) =>

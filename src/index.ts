@@ -36,8 +36,11 @@ import { CrossIcon } from './icons/CrossIcon'
 import { MagnifyingGlassIcon } from './icons/MagnifyingGlassIcon'
 import { SearchOverlay } from './SearchOverlay'
 import { Menu } from './Menu'
+import { MenuOption, Coordinates } from './types'
 
 export {
+  MenuOption,
+  Coordinates,
   Menu,
   SearchOverlay,
   MagnifyingGlassIcon,

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { MenuOption } from './types'
 
 const Container = styled.ul`
   margin: 0;

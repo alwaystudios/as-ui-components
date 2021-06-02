@@ -3,6 +3,7 @@ import { mount } from 'enzyme'
 import { ContextMenu } from './ContextMenu'
 import { act } from 'react-dom/test-utils'
 import { Menu } from './Menu'
+import { MenuOption } from './types'
 
 const numberOfOptions = 5
 const optionsOnClick = [...Array(numberOfOptions)].map(() => jest.fn())

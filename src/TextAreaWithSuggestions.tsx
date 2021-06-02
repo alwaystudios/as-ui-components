@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import { debounce } from '@alwaystudios/as-utils'
 import { slice } from 'ramda'
 import { Menu } from './Menu'
+import { Coordinates } from './types'
 
 const Container = styled.section<{ coordinates: Coordinates }>`
   ${({ coordinates: { x, y } }) =>

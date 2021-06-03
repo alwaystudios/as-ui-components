@@ -37,8 +37,16 @@ import { MagnifyingGlassIcon } from './icons/MagnifyingGlassIcon'
 import { SearchOverlay } from './SearchOverlay'
 import { Menu } from './Menu'
 import { MenuOption, Coordinates } from './types'
+import { Tab } from './Tab'
+import { Tabs } from './Tabs'
+import { Pill } from './Pill'
+import { AccountIcon } from './icons/AccountIcon'
 
 export {
+  AccountIcon,
+  Pill,
+  Tab,
+  Tabs,
   MenuOption,
   Coordinates,
   Menu,

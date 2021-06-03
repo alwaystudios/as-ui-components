@@ -24,9 +24,11 @@ import { CopyIcon } from './CopyIcon'
 import { SearchIcon } from './SearchIcon'
 import { MagnifyingGlassIcon } from './MagnifyingGlassIcon'
 import { CrossIcon } from './CrossIcon'
+import { AccountIcon } from './AccountIcon'
 
 const stories = storiesOf('Icons', module)
 
+stories.add('AccountIcon', () => <AccountIcon size="40px" />)
 stories.add('AlarmIcon', () => <AlarmIcon size="40px" />)
 stories.add('UpArrowIcon', () => <ArrowIcon direction="up" size="40px" />)
 stories.add('DownArrowIcon', () => <ArrowIcon direction="down" size="40px" />)

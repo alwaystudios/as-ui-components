@@ -6,10 +6,11 @@ type ComponentProps = {
   onToggle?: () => void
 }
 
-const Container = styled.div`
+const Container = styled.ul`
   display: flex;
   flex-direction: row;
   max-width: fit-content;
+  list-style-type: none;
 `
 
 const Content = styled.div`

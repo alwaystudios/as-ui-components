@@ -11,6 +11,8 @@ const Container = styled.ul`
   flex-direction: row;
   max-width: fit-content;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 `
 
 const Content = styled.div`

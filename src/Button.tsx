@@ -6,7 +6,7 @@ const StyledButton = styled.button`
   display: inline-block;
   padding: 0.5rem 0.5rem;
   border: 0.15rem solid #1ea7fd;
-  margin: auto;
+  margin: 0;
   border-radius: 3px;
   box-sizing: border-box;
   font-family: sans-serif;

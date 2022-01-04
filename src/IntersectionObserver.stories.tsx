@@ -36,25 +36,48 @@ const Container = styled.section`
 const Component: FunctionComponent = () => {
   const ref = useRef<HTMLDivElement>(null)
 
-  const callback = (entries: IntersectionObserverEntry[]) => {
+  const callback1 = (entries: IntersectionObserverEntry[]) => {
     entries.forEach((entry) => {
       entry.target.classList.toggle('show', entry.isIntersecting)
     })
   }
 
-  const observer = new IntersectionObserver(callback, { threshold: 0.5 })
+  const callback2 = (entries: IntersectionObserverEntry[]) => {
+    const lastCard = entries[0]
+    if (!lastCard.isIntersecting) return
+    loadCards()
+    observer2.unobserve(lastCard.target)
+    document.querySelectorAll('.card:last-of-type').forEach((div) => observer2.observe(div))
+  }
+
+  const observer1 = new IntersectionObserver(callback1, { threshold: 0.5 })
+  const observer2 = new IntersectionObserver(callback2)
 
   useEffect(() => {
-    document.querySelectorAll('.card').forEach((div) => observer.observe(div))
+    document.querySelectorAll('.card').forEach((div) => observer1.observe(div))
+    document.querySelectorAll('.card:last-of-type').forEach((div) => observer2.observe(div))
 
     return () => {
-      observer.disconnect()
+      observer1.disconnect()
+      observer2.disconnect()
     }
   }, [ref])
 
+  const loadCards = () => {
+    // eslint-disable-next-line functional/no-let
+    for (let i = 0; i < 10; i++) {
+      const card = document.createElement('div')
+      // eslint-disable-next-line functional/immutable-data
+      card.textContent = 'new card'
+      card.classList.add('card')
+      observer1.observe(card)
+      ref.current?.append(card)
+    }
+  }
+
   return (
     <Container>
-      <div className="container">
+      <div className="container" ref={ref}>
         {[...Array(10)].map((_, i) => (
           <div key={i} className="card">
             this is card {i}

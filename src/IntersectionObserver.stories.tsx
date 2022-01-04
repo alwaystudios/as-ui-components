@@ -51,7 +51,7 @@ const Component: FunctionComponent = () => {
   }
 
   const observer1 = new IntersectionObserver(callback1, { threshold: 0.5 })
-  const observer2 = new IntersectionObserver(callback2)
+  const observer2 = new IntersectionObserver(callback2, { rootMargin: '100px' })
 
   useEffect(() => {
     document.querySelectorAll('.card').forEach((div) => observer1.observe(div))

@@ -41,8 +41,10 @@ import { Tab } from './Tab'
 import { Tabs } from './Tabs'
 import { Pill } from './Pill'
 import { AccountIcon } from './icons/AccountIcon'
+import { ExpandingPanel } from './ExpandingPanel'
 
 export {
+  ExpandingPanel,
   AccountIcon,
   Pill,
   Tab,

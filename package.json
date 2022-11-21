@@ -1,7 +1,7 @@
 {
   "name": "@alwaystudios/as-ui-components",
   "author": "Alwaystudios Ltd.",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "license": "MIT",
   "repository": "git@github.com:alwaystudios/as-ui-components.git",
   "engines": {
@@ -27,8 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && yarn format && yarn test",
-      "pre-push": "yarn build && yarn test"
+      "pre-commit": "yarn lint && yarn format && yarn test"
     }
   },
   "dependencies": {

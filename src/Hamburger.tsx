@@ -47,10 +47,8 @@ type Props = {
   expanded?: boolean
 }
 
-export const Hamburger1: FC<Props> = ({ expanded = false, size = 250 }) => {
+export const Hamburger: FC<Props> = ({ expanded = false, size = 250 }) => {
   const [isExpanded, setExpanded] = useState(expanded)
-
-  console.log(111, isExpanded)
 
   return (
     <>
